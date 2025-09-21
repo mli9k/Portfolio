@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  gap: 0; 
+  position: fixed;   /* stay in background */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;  
+}
+
+.cell{
+  width: 125px;
+  height: 125px;
+  background-color: #18181B;
+  border: 2px solid #2E2E33; 
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #2e2e2e; 
+}
+

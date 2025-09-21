@@ -1,0 +1,26 @@
+/* Page animations */
+.box-1, .box-2, .box-4, .box-5 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.box-1.animate, .box-2.animate, .box-4.animate, .box-5.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.grid-container {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

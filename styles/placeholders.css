@@ -1,0 +1,34 @@
+/* Placeholder styling */
+.placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3F3F47, #2E2E33);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e9e9e9;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease-out 0.1s, transform 0.4s ease-out 0.1s;
+}
+
+.box-2.animate .placeholder {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.placeholder h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-out 0.3s, transform 0.3s ease-out 0.3s;
+}
+
+.box-2.animate .placeholder h3 {
+    opacity: 1;
+    transform: translateY(0);
+}

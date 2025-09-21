@@ -1,0 +1,25 @@
+/* Content sections base styling */
+.box-1, .box-2, .box-4, .box-5 {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Navigation link hover animation */
+.nav-link {
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    transform: translateX(2px);
+}
+
+/* Active navigation state */
+.nav-link.active {
+    background: #e9e9ee;
+    color: #222;
+    transform: translateX(3px);
+}
